@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.headerDefault {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1.25rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 2vw;
+}
+
+/* LOGOTIPO */
+.companyLogoIcon {
+  height: 3.125rem; 
+}
+
+/* NOME DA MARCA */
+.companyNameLink {
+  font-family: var(--font-ibm-plex-mono);
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 140px;
+}
+
+/* BARRA DE PESQUISA */
+.searchBarContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 30%;
+  margin-left: 3%; 
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f8;
+  border: 1px solid #ccc;
+  border-radius: 0.938rem; 
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-family: var(--font-inter);
+  font-size: 0.9rem;
+  color: #131313;
+}
+
+/* ÍCONE DE LUPA */
+.searchIconWrapper {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchIcon {
+  height: 1.25rem; /* 21px */
+}
+
+/* DIV Login, signup, logout*/
+.accountWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Label de Criar Conta*/
+.label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  cursor: pointer;
+  color: #129357;
+  font-weight: 600;
+}
+
+.label:hover {
+  text-decoration: underline;
+}
+
+/* Ícone de logout */
+.loggedContainer{
+  display: flex;
+  gap: 0.3rem;
+}
+
+.accountIcon{
+  display: flex;
+  height: 1.2rem;
+}
+
+/* Botão de logout */
+.logoutButton{
+  border: none;
+  background-color: transparent;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .companyName {
+    display: none;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .brand {
+    flex: 1;
+  }
+
+  .searchBarContainer {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .searchBar {
+    max-width: 100%;
+  }
+  
+  .accountWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

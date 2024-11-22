@@ -1,0 +1,19 @@
+/* Inputs */
+#user_nm,
+#user_cn,
+#user_fn,
+#ende_log,
+#ende_num,
+#ende_comp,
+#ende_brr,
+#ende_cep,
+#ende_uf,
+#ende_cida,
+#user_email,
+#user_pwd{
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.938rem;
+    font-size: 0.9rem;
+}

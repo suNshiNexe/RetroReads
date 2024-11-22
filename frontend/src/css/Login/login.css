@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter), sans-serif;
+}
+
+/*Fundo*/
+.form-container-login{
+    max-width: 20%;
+    margin: 12% auto;
+    padding: 20px;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 0.5rem;
+}
+
+/* Título */
+.h1-title{
+    position: absolute;
+    top: 23%;
+    left: 40.5%;
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/*Texto de erro*/
+.text-danger{
+    color: red;
+    font-size: 0.888rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #333333f1;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+
+/* Inputs */
+#login-user_email,
+#login-user_pwd{
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/*Botão CADASTRO*/
+.btn-default{
+    position: absolute;
+    top: 24.2%;
+    left: 46.5%;
+}
+
+.titleAndSignup a {
+    font-size: 1rem;
+    color: #129357;
+    text-decoration: none;
+    font-weight: 500;
+}
+  
+.titleAndSignup a:hover {
+    text-decoration: underline;
+}
+
+/*Botão ESQUECI A SENHA*/
+.forgotPassword-container{
+    padding: 0.5rem 0.1rem;
+    margin-bottom: 0.6rem;
+}
+
+.forgotPassword{
+    font-size: 1rem;
+    color: #129357;
+    text-decoration: none;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/*Botão LOGIN*/
+.btn-Success{
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #19c8761a;
+    color: #129357;
+    border: 1px  solid #129357;
+    font-size: 0.9rem;
+    padding: 0.313rem 0.825rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+}
+
+.btn-Success:hover{
+    background-color: #129357;
+    color: white;
+    transition: 0.3s;
+}

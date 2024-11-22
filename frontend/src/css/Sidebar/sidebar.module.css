@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+    width: 4rem;
+    height: 13.4rem;
+    position: fixed;
+    top: 12.9rem;
+    left: calc((100vw - 80%) / 2 - 8.4rem);
+    padding: 0.6rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar a{
+    margin-bottom: 0.125rem;
+}
+
+.menuList li {
+    list-style: none;
+}
+
+.menuItemActive{
+    background-color: #91918E;
+    border-radius: 0.6rem;
+}
+
+.iconLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.iconLink:hover {
+    background-color: #91918E;
+    transition: 0.3s;
+}
+
+.iconLink img {
+    width: 28px; 
+    height: 28px; 
+}
+
+.iconLink:hover img {
+    filter: brightness(0) invert(1); /* Transforma o ícone em branco */
+}
+
+.menuItemActive .iconLink img {
+    filter: brightness(0) invert(1); /* Transforma o ícone em branco */
+}
+
+/* Responsividade */
+@media (min-width: 1201px) and (max-width: 1366px) {
+    .sidebar {
+        left: 2.25rem;
+        position: fixed;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .sidebar {
+        left: 1.1rem;
+        position: fixed;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .sidebar {
+        left: 0.45rem; /* Ajuste opcional para essa faixa de tamanho */
+        position: fixed;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .sidebar {
+        width: 3.5rem; /* Ajusta largura da sidebar para telas de tablet */
+        left: 2rem;
+        position: fixed;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 3rem; /* Ajusta largura da sidebar para telas pequenas */
+        left: 1.5rem;
+        top: 10rem;
+    }
+
+    .iconLink img {
+        width: 24px; /* Diminui o tamanho do ícone em telas muito pequenas */
+        height: 24px;
+    }
+}

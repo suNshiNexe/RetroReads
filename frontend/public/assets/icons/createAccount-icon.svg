@@ -1,0 +1,10 @@
+
+<svg fill="#000000" width="32" height="32" viewBox="0 0 33 33" id="add-user-square-left" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<path id="secondary" d="M8.54,13A4,4,0,1,0,12,7a3.66,3.66,0,0,0-1,.13" style="fill: none; stroke: #129357; stroke-linecap: round; stroke-linejoin: round; stroke-width:1.7280000000000002;"/>
+<path id="secondary-2" data-name="secondary" d="M12,15h0a5,5,0,0,0-5,5v1H17V20A5,5,0,0,0,12,15ZM3,9H7M5,11V7" style="fill: none; stroke: #129357; stroke-linecap: round; stroke-linejoin: round; stroke-width:1.7280000000000002;"/>
+<path id="primary" d="M5,3H20a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V15" style="fill: none; stroke: #129357; stroke-linecap: round; stroke-linejoin: round; stroke-width:1.7280000000000002;"/>
+</g>
+</svg>

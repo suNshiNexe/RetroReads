@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter), sans-serif;
+}
+
+/*Fundo*/
+.form-container-bookRegister {
+    max-width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+}
+
+/* -------------------------------- */
+
+/* Título */
+.h1-Title-book-register{
+    max-width: 60%;
+    margin: 35px auto;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* -------------------------------- */
+
+/*Subtítulo*/
+.h1-subTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.25rem;
+}
+
+/* -------------------------------- */
+
+/*Texto de erro*/
+.text-danger{
+    color: red;
+    font-size: 0.888rem;
+    margin-bottom: 1rem;
+}
+
+/* -------------------------------- */
+
+/*DIVS FOTO DO LIVRO, DADOS DO LIVRO E STATUS DE LEITURA */
+.container-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------- */
+
+/*LABEL*/
+
+label {
+    font-size: 1rem;
+    color: #333333f1;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+
+/* -------------------------------- */
+
+/* STATUS DA LEITURA*/
+.reading-status{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reading-status h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #91918E;
+    cursor: pointer;
+}
+
+.custom-radio input[type="radio"] {
+    display: none; /* Esconde o radio button padrão */
+}
+
+.custom-radio .radiomark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #00000033;
+    border-radius: 20%; /* Define o formato circular */
+    margin-right: 0.5rem;
+}
+
+.custom-radio input[type="radio"]:checked + .radiomark {
+    background-color: #91918E;
+    border-color: #91918E;
+}
+
+.custom-radio .radiomark:after {
+    position: absolute;
+}
+
+/* -------------------------------- */
+
+/*Campos do formulário*/
+.form-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 .5rem;
+}
+
+.small-fields{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+  
+.small-fields > div, .reading-status {
+    flex: 1;
+    min-width: 120px; 
+}  
+
+/* -------------------------------- */
+
+/*Botão anexo de imagem*/
+#image-upload-container {
+    height: 472px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#image-upload-container:hover{
+    border: 1px solid #929292;
+}
+
+.picture_image img{
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: cover; 
+    border-radius: 15px;
+    display: block; 
+    margin: 0 auto;
+}
+
+
+#addIcon{
+    opacity: 20%;
+}
+
+.upload-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.file-input {
+    display: none; /* Esconde o input padrão */
+}
+
+/* -------------------------------- */
+
+/* Inputs */
+#book_title,
+#book_author,
+#book_publisher,
+#book_releaseDate,
+#book_gender,
+#book_numberPages,
+#book_isbn,
+#book_description,
+#book_score,
+#book_price,
+#book_amount{
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.938rem;
+    font-size: 0.9rem;
+}
+
+#book_description{
+    resize: none;
+    width: 400px;
+    height: 245px;
+}
+
+#book_score, 
+#book_price, 
+#book_amount{
+    width: 122px;
+}
+
+/* -------------------------------- */
+
+/*Botão*/
+.btn-successful-add {
+    display: block;
+    margin-left: auto;
+    background-color: #19c8761a;
+    color: #129357;
+    border: 1px  solid #129357;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 0.313rem 0.625rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn-successful-add:hover{
+    background-color: #129357;
+    color: white;
+    transition: 0.3s;
+}

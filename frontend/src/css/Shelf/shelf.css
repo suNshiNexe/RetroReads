@@ -1,0 +1,279 @@
+/* Título Catálogo */
+.h1-ShelfTitle{
+    max-width: 80%;
+    margin: 2.5rem auto;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Placeholder que simula o espaço do botão expandido */
+.placeholder-shelf {
+    display: none; 
+    height: 10rem;
+}
+
+.placeholder-shelf.expanded {
+    display: block;
+}
+
+/* Botão filtro */
+.btn-filter-shelf{
+    position: absolute;
+    right: 16rem;
+    top: 7rem;
+    padding: 0.8rem 0.9rem;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-filter-shelf.expanded {
+    width: 35%;
+    cursor: pointer;
+}
+
+/* Botão plus */
+.book-registerBtn{
+    position: absolute;
+    right: 11.8rem;
+    top: 7rem;
+    border: none;
+    background-color: transparent;
+}
+
+.book-registerBtn a {
+    display: block;
+    padding: 0.8rem 0.9rem;
+    background-color: #e6f3ed;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+}
+
+.book-registerBtn a:hover{
+    background-color: #129357;
+    transition: 0.3s;
+}
+
+/* Icone plus ( + ) */
+.book-registerBtn .plus-icon {
+    display: block;
+    width: 19px; 
+    height: 19px; 
+}
+
+.book-registerBtn:hover .plus-icon {
+    content: url('/public/assets/icons/plus-icon-white.svg');
+}
+
+/*---------------------------------------------------------*/
+
+/* Container */
+.background-container-shelf {
+    width: 80%;
+    padding: 1rem;
+    margin: 2.5rem auto;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+    display: flex; /* Adiciona flexbox */
+    flex-direction: column; /* Organiza os itens verticalmente */
+}
+
+/* Grid de livros */
+.container-bookcard{
+    display: grid;
+    gap: 0.1rem; /* Define um espaçamento consistente entre os cards */
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    width: 100%; /* Garante que a grid ocupe toda a largura do container */
+}
+
+/* Card de cada livro */
+.book-card-shelf {
+    background-color: #FEFEFE;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    height: auto;
+    width: 15rem;
+}
+
+.book-card-shelf:hover{
+    -webkit-box-shadow: 1px 6px 18px -2px rgba(0,0,0,0.46);
+    -moz-box-shadow: 1px 6px 18px -2px rgba(0,0,0,0.46);
+    box-shadow: 1px 6px 18px -2px rgba(0,0,0,0.46);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+/* Imagem do livro */
+.book_img{
+    width: 100%;
+    height: 18.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+/* Detalhes do livro */
+.book-details-shelf{
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+/* Título do livro */
+.book_title{
+    text-align: left;
+    margin-bottom: 0.1rem;
+    font-size: 1.4rem;
+    white-space: nowrap;    
+    overflow: hidden;       
+    text-overflow: ellipsis; 
+}
+
+/* Autor do livro */
+.book_author{
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #91918E;
+}
+
+/* AVALIAÇÃO DO LIVRO */
+.book_score{
+    font-size: 1.1rem;
+    text-align: left;
+    color: #129357;
+    margin-bottom: 1rem;
+}
+
+.book_review{
+    margin-right: 0.4rem;
+}
+
+.star-icon{
+    width: 1.1rem;
+}
+
+/* ------------------------------------------- */
+
+/* STATUS DA LEITURA - QUERO LER */
+.reading-status-view.wantToRead{
+    background-color: #f3f3f3;
+    color: #91918e;
+    border: 1px  solid #91918e;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+/* STATUS DA LEITURA - LENDO */
+.reading-status-view.reading{
+    background-color: #fef6e5;
+    color: #ffaa00;
+    border: 1px  solid #ffaa00;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+/* STATUS DA LEITURA - LIDO */
+.reading-status-view.read{
+    background-color: #e6f5fd;
+    color: #09a6f3;
+    border: 1px  solid #09a6f3;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+/* STATUS DA LEITURA - QUERO ME LIVRAR */
+.reading-status-view.getRideOf{
+    background-color: #fcebe9;
+    color: #e93f30;
+    border: 1px  solid #e93f30;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+/* ------------------------------------------- */
+
+.book-edit-btn{
+    margin-top: 0.3em;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #91918e;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+}
+
+.book-edit-btn:hover{
+    color: #464646;
+    transition: 0.3s;
+}
+
+/* ------------------------------------------- */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+  
+.pagination-btn {
+    padding: 0.5rem 0.685rem;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pagination-btn:hover{
+    background-color: #91918E;
+    transition: 0.3s;
+}
+
+.page{
+    display: flex;
+    font-family: var(--font-inter);
+    padding: 0.4rem;
+}
+
+.totalPages{
+    margin-left: 0.3rem;
+    font-weight: bold;
+}
+
+.arrowIconLeft{
+    display: flex;
+    width: 28px; 
+    height: 28px; 
+}
+
+.arrowIconRight{
+    display: flex;
+    width: 28px; 
+    height: 28px; 
+}
+
+.pagination-btn:hover .arrowIconLeft {
+    content: url('/public/assets/icons/arrow-left-icon-white.svg');
+}
+
+.pagination-btn:hover .arrowIconRight {
+    content: url('/public/assets/icons/arrow-right-icon-white.svg');
+}

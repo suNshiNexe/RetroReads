@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter), sans-serif;
+}
+
+/* Título Catálogo */
+.h1-CatalogTitle{
+    max-width: 80%;
+    margin: 2.5rem auto;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Placeholder que simula o espaço do botão expandido */
+.placeholder {
+    display: none; 
+    height: 10rem;
+}
+
+.placeholder.expanded {
+    display: block;
+}
+
+/* Botão filtro */
+.btn-filter{
+    position: absolute;
+    right: 11.8rem;
+    top: 7rem;
+    padding: 0.8rem 0.9rem;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-filter.expanded {
+    width: 35%;
+    cursor: pointer;
+}
+
+.btn-filter:not(.expanded):hover{
+    background-color: #91918E;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Ícone filtro */
+.filter-icon{
+    display: block;
+    margin-left: auto;
+    width: 20px; 
+    height: 20px; 
+}
+
+.btn-filter:not(.expanded):hover .filter-icon {
+    filter: brightness(0) invert(1); 
+}
+
+/*----------------------------------------*/
+/* Container */
+.background-container-catalog {
+    width: 80%;
+    padding: 1rem;
+    margin: 2.5rem auto;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+    display: flex; /* Adiciona flexbox */
+    flex-direction: column; /* Organiza os itens verticalmente */
+}
+
+/* Grid de livros */
+.container-bookcard{
+    display: grid;
+    gap: 0.1rem; /* Define um espaçamento consistente entre os cards */
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    width: 100%; /* Garante que a grid ocupe toda a largura do container */
+}
+
+/* Card de cada livro */
+.book-card {
+    background-color: #FEFEFE;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    height: auto;
+    width: 15rem;
+}
+
+/* Imagem do livro */
+.book_img{
+    width: 100%;
+    height: 18.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+/* Detalhes do livro */
+.book-details{
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+/* Título do livro */
+.book_title{
+    text-align: left;
+    margin-bottom: 0.1rem;
+    font-size: 1.4rem;
+    white-space: nowrap;    
+    overflow: hidden;       
+    text-overflow: ellipsis; 
+}
+
+/* Autor do livro */
+.book_author{
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #91918E;
+}
+
+/* Preço do livro */
+.book_price{
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #129357;
+}
+
+.currency{
+    color: black;
+    font-size: 1.3rem;
+    margin-right: 0.2rem;
+}
+
+/* Botão interesse */
+.interest-button{
+    background-color: #19c8761a;
+    color: #129357;
+    border: 1px  solid #129357;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.interest-button:hover{
+    background-color: #129357;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Responsividade */
+

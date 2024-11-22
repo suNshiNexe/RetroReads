@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter), sans-serif;
+}
+
+/*Fundo*/
+.form-container-signup {
+    max-width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+}
+
+/* Título */
+.h1-Title{
+    max-width: 60%;
+    margin: 50px auto;
+    font-size: 2rem;
+    color: #333;
+}
+
+/*Subtítulo*/
+.h1-subTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.25rem;
+}
+
+/*Texto de erro*/
+.text-danger{
+    color: red;
+    font-size: 0.888rem;
+    margin-bottom: 1rem;
+}
+
+/*Texto de erro da senha*/
+#text_danger_user_pwd>ul{
+    margin-top: 0.2rem;
+    margin-left: 1.5rem;
+}
+
+/*DIVS DADOS PESSOAIS, ENDEREÇO E DADOS DA CONTA*/
+.container-for-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333333f1;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+
+/*Campos do formulário*/
+.form-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 .5rem;
+}
+
+/* Inputs */
+
+#signup-user_nm,
+#signup-user_cn,
+#signup-user_fn,
+#signup-ende_log,
+#signup-ende_num,
+#signup-ende_comp,
+#signup-ende_brr,
+#signup-ende_cep,
+#signup-ende_uf,
+#signup-ende_cida,
+#signup-user_email,
+#signup-user_pwd,
+#signup-user_pwd_confirm{
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.938rem;
+    font-size: 0.9rem;
+}
+
+select {
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.938rem;
+    font-size: 0.9rem;
+}
+
+/*Botão CADASTRAR*/
+.btn-successful {
+    display: block;
+    margin-left: auto;
+    background-color: #19c8761a;
+    color: #129357;
+    border: 1px  solid #129357;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 0.313rem 0.625rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.btn-successful:hover{
+    background-color: #129357;
+    color: white;
+    transition: 0.3s;
+}

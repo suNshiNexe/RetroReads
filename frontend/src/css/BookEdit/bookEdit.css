@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter), sans-serif;
+}
+
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.281);
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    max-width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+}
+
+/* Título */
+.h1-viewTitle {
+    font-size: 2rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin-bottom: 1.5rem;
+}
+
+/* Divs para Foto do Livro, Dados do Livro e Status de Leitura */
+.container-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 1rem;
+    color: #333333f1;
+    margin-bottom: 5px;
+    font-weight: 600;
+    line-height: 1.2rem;
+}
+
+.small-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.small-fields > div, .reading-status {
+    flex: 1;
+    min-width: 120px;
+}
+
+/* Inputs */
+.bookEdit_title,
+.bookEdit_date,
+.bookEdit_genre,
+.bookEdit_pages,
+.bookEdit_ISBN,
+.bookEdit_status,
+.bookEdit_publisher,
+.bookEdit_description,
+.bookEdit_price,
+.bookEdit_author,
+.bookEdit_amount,
+.bookEdit_score {
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.938rem;
+    font-size: 0.9rem;
+}
+
+.bookEdit_description {
+    resize: none;
+    width: 400px;
+    height: 245px;
+}
+
+/* Status de Leitura */
+.reading-status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reading-status h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #91918E;
+    cursor: pointer;
+}
+
+.custom-radio input[type="radio"] {
+    display: none; /* Esconde o radio button padrão */
+}
+
+.custom-radio .radiomark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #00000033;
+    border-radius: 20%; /* Define o formato circular */
+    margin-right: 0.5rem;
+}
+
+.custom-radio input[type="radio"]:checked + .radiomark {
+    background-color: #91918E;
+    border-color: #91918E;
+}
+
+/* Botão Geral */
+.modal-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-btn button{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Botão Salvar */
+.saveBtn {
+    background-color: #19c8761a;
+    color: #129357;
+    border: 1px solid #129357;
+    border-radius: 0.5rem;
+    padding: 0.313rem 0.625rem;
+}
+
+.saveBtn:hover {
+    background-color: #129357;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Botão Fechar */
+.closeBtn {
+    background-color: #ddd;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    padding: 0.313rem 0.625rem;
+}
+
+.closeBtn:hover {
+    background-color: #aaa;
+    color: white;
+    transition: 0.3s;
+}
+
+/* BOTÃO DELETAR */
+.modal-btn-deleteAndTitle{
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+}
+
+.trash-icon{
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+}
+
+.deleteBtn:hover .trash-icon {
+    content: url('/public/assets/icons/trash-icon-white.svg');
+}
+
+.deleteBtn{
+    display: block;
+    margin-left: auto;
+    padding: 0.8rem 0.9rem;
+    background-color:  rgba(255, 0, 0, 0.171);;
+    border: 1px solid red;
+    border-radius: 0.5rem;
+}
+
+.deleteBtn:hover {
+    background-color: rgba(233, 63, 48, 0.8);
+    border: 1px solid rgba(175, 41, 29, 0.8);
+    transition: 0.3s;
+}
+
+.book_imgs{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #ddd;
+}
