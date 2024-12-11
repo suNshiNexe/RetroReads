@@ -17,7 +17,8 @@
 ###
 
 <div align="center">
-  <img height="300" src="https://imgur.com/ZHmC31B.png"  />
+  <a><img height="300" src="https://imgur.com/ZHmC31B.png"  />
+  </a>
 </div>
 
 ###
@@ -38,9 +39,9 @@
 
 ###
 
-
+<div align="center">
   <img height="360" src="https://i.imgur.com/03cFSxH.gif" />
-
+</div>
 
 
 ###
