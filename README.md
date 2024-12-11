@@ -4,7 +4,8 @@
 
 # RetroReads
 # Índice 
-1. [Sobre o Projeto](#sobre-o-projeto) | 2. [Funcionalidades](#funcionalidades) | 3. [Tecnologias Utilizadas](#tecnologias-utilizadas) | 4. [Instalação](#instalação) | 5. [Como Usar](#como-usar) - [Pré-requisitos](#pré-requisitos) - [Executando a Aplicação](#executando-a-aplicação) | 6. [Contribuição](#contribuição) | 7. [Licença](#licença) | 8. [Contato](#contato)
+1. [Sobre o Projeto](#sobre-o-projeto) | 2. [Funcionalidades](#funcionalidades) | 3. [Tecnologias Utilizadas](#tecnologias-utilizadas) | 4. [Instalação](#instalação) | 5. [Como Usar](#como-usar) - [Pré-requisitos](#pré-requisitos) - [Executando a Aplicação](#executando-a-aplicação) |
+2. 6. [Contribuição](#contribuição) | 7. [Licença](#licença) | 8. [Contato](#contato)
 
 ## Sobre o Projeto
 Sistema CSCO - Conexão Sebo-Consumidor Online é um sistema desenvolvido para conectar leitores, livrarias e sebos, facilitando a venda, compra e gerenciamento de livros de maneira eficiente e intuitiva. Este projeto tem como objetivo principal oferecer uma solução completa para problemas gerenciais de negócios, ao mesmo tempo em que auxilia usuários comuns a organizarem suas estantes de livros de forma prática e funcional.<br><br>O sistema abrange desde o gerenciamento de estoque e planejamento financeiro para livrarias e sebos, até funcionalidades que permitem aos leitores acompanhar suas leituras, fazer reservas de livros e explorar novas histórias. Dessa forma, o CSCO oferece uma plataforma robusta, acessível e de alta funcionalidade, atendendo às necessidades tanto de negócios de venda de livros quanto de leitores entusiastas.
