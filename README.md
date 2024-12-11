@@ -17,8 +17,7 @@
 ###
 
 <div align="center">
-  <a><img height="300" src="https://imgur.com/ZHmC31B.png"  />
-  </a>
+  <img height="300" src="https://imgur.com/ZHmC31B.png"  />
 </div>
 
 ###
