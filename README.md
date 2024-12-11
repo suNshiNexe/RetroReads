@@ -38,7 +38,9 @@
 
 ###
 
-![Home, Product Page and Interests](https://s7.gifyu.com/images/SJCNm.gif)
+<div align="center">
+  <img height="360" src="https://i.imgur.com/03cFSxH.gif"/>
+</div>
 
 
 ###
