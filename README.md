@@ -77,8 +77,7 @@ Estamos construindo um DOCKER para facilitar a instalação do projeto e a visua
 
 ### Passos de instalação
 1. Clone o repositório:
-
-    git clone https://github.com/suNshiNexe/RetroReads.git
+bash ```git clone https://github.com/suNshiNexe/RetroReads.git```
 
 
 
