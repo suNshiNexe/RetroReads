@@ -36,15 +36,10 @@
 
 <p align="left">Home (Catálogo), BookPage (página do produto) e Meus Interesses</p>
 
-###
-
 
 <div align="center">
   <img src="https://i.postimg.cc/LstFRJtK/ezgif-5-5f554a643c.gif" alt="Demo GIF" height="360" />
 </div>
-
-
-###
 
 <h2 align="left">Tecnologias (Stacks)</h2>
 
