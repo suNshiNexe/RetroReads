@@ -4,7 +4,7 @@
 
 # RetroReads
 # Índice 
-  1. [Sobre o Projeto](#sobre-o-projeto) | 2. [Funcionalidades](#funcionalidades) | 3. [Tecnologias Utilizadas](#tecnologias-utilizadas) | 4. [Instalação](#instalação) | 5. [Como Usar](#como-usar) - [Pré-requisitos](#pré-requisitos) - [Executando a Aplicação](#executando-a-aplicação) |
+1.[ Sobre o Projeto](#sobre-o-projeto) | 2. [Funcionalidades](#funcionalidades) | 3. [Tecnologias Utilizadas](#tecnologias-utilizadas) | 4. [Instalação](#instalação) | 5. [Como Usar](#como-usar) - [Pré-requisitos](#pré-requisitos) - [Executando a Aplicação](#executando-a-aplicação) |
 6. [Contribuição](#contribuição) | 7. [Licença](#licença) | 8. [Contato](#contato)
 
 ## Sobre o Projeto
