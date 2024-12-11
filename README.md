@@ -38,9 +38,8 @@
 
 ###
 
-<div align="center">
-  <img height="360" src="https://s7.gifyu.com/images/SJCNm.gif"/>
-</div>
+![Home, Product Page and Interests](https://s7.gifyu.com/images/SJCNm.gif)
+
 
 ###
 
