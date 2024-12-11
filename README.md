@@ -39,7 +39,7 @@
 ###
 
 <div align="center">
-  <img height="360" src="https://imgur.com/0KYvwbF.gif"/>
+  <img height="360" src="https://i.imgur.com/0KYvwbF.mp4"/>
 </div>
 
 ###
