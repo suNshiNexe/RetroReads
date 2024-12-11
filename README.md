@@ -72,6 +72,7 @@
 | Backend   | Recommended |
 | ----------| -----------|
 | Node.js   | LTS 18.x |
+
 Estamos construindo um DOCKER para facilitar a instalação do projeto e a visualização do mesmo, mas enquanto não possuímos você necessitará da versão 8.0 em diante do MySQL e recomendamos a utilização do Node 18.x ou  superior.
 
 ### Passos de instalação
