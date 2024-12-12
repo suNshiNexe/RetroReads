@@ -153,10 +153,10 @@ Para mais detalhes, consulte a licença completa.
 
 
 ## Autores
-- [Lucas Quinália - Leader and Mobile Developer](https://www.github.com/suNshiNexe)
-- [Stephanni Cavalcante - Frontend Developer](https://www.github.com/suNshiNexe)
+- [Lucas Quinália - Leader and Mobile Developer](https://www.github.com/#)
+- [Stephanni Cavalcante - Frontend Developer](https://www.github.com/stephannica)
 - [Yuri Viana - DevOps, Backend Developer](https://www.github.com/suNshiNexe)
-- [Diego Basilio - Backend Developer](https://www.github.com/suNshiNexe)
-- [Matheus Souto - DBA](https://www.github.com/suNshiNexe)
-- [Mauricio Stavarengo - Analyst](https://www.github.com/suNshiNexe)
-- [Davi Silva - Software Tester](https://www.github.com/suNshiNexe)
+- [Diego Basilio - Backend Developer](https://github.com/diegobasilio)
+- [Matheus Souto - DBA](#)
+- [Mauricio Stavarengo - Analyst](#)
+- [Davi Silva - Software Tester](#)
