@@ -84,6 +84,8 @@ Home (Catálogo), BookPage (página do produto) e Meus Interesses
 
 Estamos construindo um DOCKER para facilitar a instalação do projeto e a visualização do mesmo, mas enquanto não possuímos você necessitará da versão 8.0 em diante do MySQL e recomendamos a utilização do Node 18.x ou  superior.
 
+------
+
 ### Passos de instalação
 1. Clone o repositório:
 	```bash
@@ -115,6 +117,9 @@ Estamos construindo um DOCKER para facilitar a instalação do projeto e a visua
 	password: "root",
 	port: 3306
 	```
+
+ ------
+ 
 ### Inicialização
 1. Execute o backend
 	```bash
