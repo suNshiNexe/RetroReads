@@ -45,7 +45,7 @@ Ao integrar diferentes tipos de usuários, o CSCO promove um ambiente colaborati
 ## Screenshots
 Home (Catálogo), BookPage (página do produto) e Meus Interesses
 <div align="center">
-  <img src="https://i.postimg.cc/LstFRJtK/ezgif-5-5f554a643c.gif" alt="Demo GIF" height="360" />
+  <img src="./gifs-images/gif1.gif" alt="Demo GIF" height="360" />
 </div>
 
 -----------------
