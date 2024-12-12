@@ -47,8 +47,11 @@ Home (Catálogo), BookPage (página do produto) e Meus Interesses
 <div align="center">
   <img src="./gifs-images/gif1.gif" alt="Demo GIF" height="360" />
 </div>
-
 -----------------
+Login
+<div align="center">
+  <img src="./gifs-images/gif2.gif" alt="Demo GIF" height="360" />
+</div>
 ## Tecnologias (Stacks)
 <div align="left">
   <img src="https://skillicons.dev/icons?i=js" height="40" alt="javascript logo"  />
