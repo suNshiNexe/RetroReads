@@ -74,7 +74,9 @@ Home (Catálogo), BookPage (página do produto) e Meus Interesses
 | Database   | Recommended |
 | ---------- | ----------- |
 | MySQL      | 8.0         |
---
+
+---
+
 | Backend   | Recommended |
 | ----------| -----------|
 | Node.js   | LTS 18.x |
