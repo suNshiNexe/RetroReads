@@ -3,6 +3,8 @@
 </div>
 
 # RetroReads
+[![Version 1.3.0](https://img.shields.io/badge/version-1.3.0-%23129357)
+
 # Sumário 
 1. [Sobre o Projeto](#sobre-o-projeto) 
 2. [Funcionalidades](#funcionalidades) 
