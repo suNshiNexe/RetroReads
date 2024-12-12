@@ -54,6 +54,22 @@ Login
 <div align="center">
   <img src="./gifs-images/gif2.gif" alt="Demo GIF" height="360" />
 </div>
+
+----------------
+
+Minha Estante, Visualização e Deleção de livros
+<div align="center">
+  <img src="./gifs-images/gif3.gif" alt="Demo GIF" height="360" />
+</div>
+
+--------------
+
+Cadastro de Livros e Visualização
+<div align="center">
+  <img src="./gifs-images/gif4.gif" alt="Demo GIF" height="360" />
+</div>
+
+
 ## Tecnologias (Stacks)
 <div align="left">
   <img src="https://skillicons.dev/icons?i=js" height="40" alt="javascript logo"  />
