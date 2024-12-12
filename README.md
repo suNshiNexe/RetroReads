@@ -3,9 +3,17 @@
 </div>
 
 # RetroReads
-# Índice 
-1.[ Sobre o Projeto](#sobre-o-projeto) | 2. [Funcionalidades](#funcionalidades) | 3. [Tecnologias Utilizadas](#tecnologias-utilizadas) | 4. [Instalação](#instalação) | 5. [Como Usar](#como-usar) - [Pré-requisitos](#pré-requisitos) - [Executando a Aplicação](#executando-a-aplicação) |  
-6. [Contribuição](#contribuição) | 7. [Licença](#licença) | 8. [Contato](#contato)
+# Sumário 
+1. [Sobre o Projeto](#sobre-o-projeto) 
+2. [Funcionalidades](#funcionalidades) 
+3. [Screenshots](#screenshots) 
+4. [Tecnologias (Stacks)](#tecnologias) 
+5. [Instalação](#como-usar) 
+	- [Requisitos](#requisitos) 
+	 - [Passos de instalação](#passos-de-instalação) 
+	 - [Inicialização](#inicialização) 
+7. [Licença](#licença)
+8. [Autores](#autores)
 
 ## Sobre o Projeto
 Sistema CSCO - Conexão Sebo-Consumidor Online é um sistema desenvolvido para conectar leitores, livrarias e sebos, facilitando a venda, compra e gerenciamento de livros de maneira eficiente e intuitiva. Este projeto tem como objetivo principal oferecer uma solução completa para problemas gerenciais de negócios, ao mesmo tempo em que auxilia usuários comuns a organizarem suas estantes de livros de forma prática e funcional.<br><br>O sistema abrange desde o gerenciamento de estoque e planejamento financeiro para livrarias e sebos, até funcionalidades que permitem aos leitores acompanhar suas leituras, fazer reservas de livros e explorar novas histórias. Dessa forma, o CSCO oferece uma plataforma robusta, acessível e de alta funcionalidade, atendendo às necessidades tanto de negócios de venda de livros quanto de leitores entusiastas.
@@ -38,7 +46,7 @@ Home (Catálogo), BookPage (página do produto) e Meus Interesses
   <img src="https://i.postimg.cc/LstFRJtK/ezgif-5-5f554a643c.gif" alt="Demo GIF" height="360" />
 </div>
 
----
+-----------------
 ## Tecnologias (Stacks)
 <div align="left">
   <img src="https://skillicons.dev/icons?i=js" height="40" alt="javascript logo"  />
@@ -74,43 +82,72 @@ Estamos construindo um DOCKER para facilitar a instalação do projeto e a visua
 
 ### Passos de instalação
 1. Clone o repositório:
-```bash
-git clone https://github.com/suNshiNexe/RetroReads.git
-```
+	```bash
+	git clone https://github.com/suNshiNexe/RetroReads.git
+	```
 2. Instale as dependências do frontend e backend.
-```bash
-cd RetroReads/backend
-npm install
-cd ../frontend
-npm install
-```  
+	```bash
+	cd RetroReads/backend
+	npm install
+	cd ../frontend
+	npm install
+	```  
 3. Importe a base de dados para o seu banco de dados MySQL:
 
     Caminho:
     cd RetroReads/basededados
     Arquivo: retro_reads.sql
 
-Caso tenha dúvidas, consulte este site: [MySQL: Importando/Exportando um banco de dados](https://help.umbler.com/hc/pt-br/articles/202385865-MySQL-Importando-Exportando-um-banco-de-dados)
+	Caso tenha dúvidas, consulte este site: [MySQL: Importando/Exportando um banco de dados](https://help.umbler.com/hc/pt-br/articles/202385865-MySQL-Importando-Exportando-um-banco-de-dados)
 
 4. Configure o arquivo ``db.js``
 
     Caminho: ``RetroReads/backend/src/``
     
-Altere de acordo com a sua configuração
-```
-host: "localhost",
-user: "root",
-password: "root",
-port: 3306
-```
+	Altere de acordo com a sua configuração
+	```
+	host: "localhost",
+	user: "root",
+	password: "root",
+	port: 3306
+	```
 ### Inicialização
 1. Execute o backend
-```bash
-cd RetroReads/backend/src/client
-node server
-```
+	```bash
+	cd RetroReads/backend/src/client
+	node server
+	```
 2. Execute o frontend (React)
-```bash
-cd RetroReads/frontend
-npm start
-```
+	```bash
+	cd RetroReads/frontend
+	npm start
+	```
+
+## Licença
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+Este projeto está licenciado sob a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+
+Você é livre para:
+
+- Compartilhar — copiar e redistribuir o material em qualquer meio ou formato
+- Adaptar — remixar, transformar e criar a partir do material
+Desde que siga as seguintes condições:
+
+- Atribuição — Você deve dar o devido crédito, fornecer um link para a licença e indicar se foram feitas alterações.
+- Uso Não Comercial — Você não pode usar o material para fins comerciais.
+Para mais detalhes, consulte a licença completa.
+
+
+
+
+
+
+## Autores
+- [Lucas Quinália - Leader and Mobile Developer](https://www.github.com/suNshiNexe)
+- [Stephanni Cavalcante - Frontend Developer](https://www.github.com/suNshiNexe)
+- [Yuri Viana - DevOps, Backend Developer](https://www.github.com/suNshiNexe)
+- [Diego Basilio - Backend Developer](https://www.github.com/suNshiNexe)
+- [Matheus Souto - DBA](https://www.github.com/suNshiNexe)
+- [Mauricio Stavarengo - Analyst](https://www.github.com/suNshiNexe)
+- [Davi Silva - Software Tester](https://www.github.com/suNshiNexe)
