@@ -38,7 +38,9 @@ Ao integrar diferentes tipos de usuários, o CSCO promove um ambiente colaborati
 
 - **Sistema de Interesses:** interesse do usuário no produto que está à venda;
 
-- **Minhas Vendas:** para acompanhar livros anunciados<br>- Autenticação JWT. O sistema é todo autenticado garantindo que apenas usuários cadastrados e com permissão possam acessar as funcionalidades que exigem uma autenticação, deixando o sistema seguro contra requisições mal intencionadas sem privilégios de acesso;
+- **Minhas Vendas:** para acompanhar livros anunciados<br>
+
+- **Autenticação JWT**. O sistema é todo autenticado garantindo que apenas usuários cadastrados e com permissão possam acessar as funcionalidades que exigem uma autenticação, deixando o sistema seguro contra requisições mal intencionadas sem privilégios de acesso;
 
 -  **Upload de imagens com multer**.
 
