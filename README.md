@@ -175,7 +175,6 @@ Para mais detalhes, consulte a licença completa.
 
 
 
-
 ## Autores
 - [Lucas Quinália - Leader and Mobile Developer](https://github.com/LucasQuinalia)
 - [Stephanni Cavalcante - Frontend Developer](https://www.github.com/stephannica)
