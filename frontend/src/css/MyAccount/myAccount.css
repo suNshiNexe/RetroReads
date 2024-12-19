@@ -17,3 +17,104 @@
     border-radius: 0.938rem;
     font-size: 0.9rem;
 }
+/* Contêiner principal do perfil */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  /* Título da página */
+  .profile-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Caixa de informações do usuário */
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cabeçalho da caixa de informações */
+  .profile-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Nome e foto do usuário */
+  .profile-info-header .user-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .profile-info-header .user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+  }
+  
+  /* Seção de dados do perfil */
+  .profile-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Cada campo de dados */
+  .profile-info-section div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .profile-info-section .label {
+    font-weight: 600;
+  }
+  
+  .profile-info-section .value {
+    font-weight: 400;
+    color: #333;
+  }
+  
+  /* Botões de editar ou outras ações */
+  .profile-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .profile-actions button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-actions button:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import classNames from 'classnames';
 import { useState } from 'react';
-import '../css/global.css';
 import styles from '../css/Header&Footer/footer.module.css';
+import '../css/global.css'
 
 const FooterDefault = ({ className = "" }) => {
   const [isInfoOpen, setIsInfoOpen] = useState(false);

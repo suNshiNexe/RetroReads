@@ -1,0 +1,78 @@
+/*---------------------  ESTILO DO MODAL  ------------------------*/ 
+
+/* Sobreposição */
+.modal-overlay-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo principal */
+.modal-content-alert {
+    padding: 2rem;
+    width: 35rem;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+/*---------------------  TEXTOS  ------------------------*/ 
+
+/* Texto */
+.modal-text-alert {
+    color: #1c1a15;
+    margin-bottom: 1rem;
+    text-wrap: nowrap;
+}
+
+/* Sub Texto */
+.modal-subText-alert {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #585858;
+}
+
+.modal-a-alert{
+    text-decoration: underline;
+    color: #585858;
+}
+
+.modal-a-alert:hover{
+    text-decoration: underline;
+    color: #129357;
+    transition: 0.2s;
+}
+
+/*---------------------  BOTÕES  ------------------------*/ 
+
+/* Contêiner dos botões*/
+.modal-btn-alert{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Botão de OK */
+.modal-btn-ok-alert{
+    background-color: #19c8761a;
+    color: #129357;
+    border: 1px solid #129357;
+    border-radius: 0.5rem;
+    padding: 0.313rem 0.625rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.modal-btn-ok-alert:hover{
+    background-color: #129357;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}

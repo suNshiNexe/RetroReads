@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/LogoutAlert.css'; // Certifique-se de importar o arquivo CSS com
+import '../css/Modals/LogoutAlert/logoutAlert.css'; // Certifique-se de importar o arquivo CSS com
 
 const LogoutAlert = ({ show, onConfirm, onCancel }) => {
   if (!show) return null;

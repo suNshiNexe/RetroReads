@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { genres } from '../pages/BookRegister';
-import '../css/BookEdit/bookEdit.css'
+import DeleteAlert from '../components/DeleteAlert'
+import '../css/Modals/BookEdit/bookEdit.css';
+import '../css/global.css'
 
 
 const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
@@ -21,6 +23,7 @@ const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
   });
 
   const [selectedGenres, setSelectedGenres] = useState(bookDetails.genero ? bookDetails.genero.split(",") : []);
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
   useEffect(() => {
     if (book) {
@@ -55,9 +58,8 @@ const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
     setBookDetails(prev => ({ ...prev, genero: selected.join(",") }));
   };
 
-
   const handleChange = (e) => {
-    if (viewOnly) return; // Não permite edição em modo viewOnly
+    if (viewOnly) return;
     const { name, value } = e.target;
     setBookDetails({
       ...bookDetails,
@@ -78,13 +80,21 @@ const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
       .catch(err => console.log("Erro ao atualizar livro:", err));
   };
 
+  const handleDeleteClick = () => {
+    setShowDeleteConfirm(true); // Exibe o modal de confirmação
+  };
 
   const handleDelete = () => {
     if (book) {
       onDelete(book.LVRO_ID);
       onClose();
     }
+    setShowDeleteConfirm(false);
   }
+
+  const handleCloseDeleteModal = () => {
+    setShowDeleteConfirm(false); // Fecha o modal sem deletar
+  };
 
   // const handleDelete = (bookId) => {
 
@@ -108,7 +118,6 @@ const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
   // };
 
   return (
-    //isOpen && (
     isOpen && book && book.LVRO_ID && (
       <div className="modal">
         <div className="modal-content">
@@ -120,7 +129,7 @@ const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
         {!viewOnly && (
           <div className="modal-btn-deleteAndTitle"> 
             <h1 className="h1-viewTitle">{bookDetails.titulo}</h1>
-            <button className="deleteBtn" onClick={handleDelete}>
+            <button className="deleteBtn" onClick={handleDeleteClick}>
               <img src="./assets/icons/trash-icon.svg" alt="deletar" className="trash-icon" />
             </button>
           </div>
@@ -134,7 +143,7 @@ const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
 
               {/* Campo de anexo da imagem ↓ */}
 
-              <div className="form-field" id="image-upload-container">
+              <div className="form-field" id="image-container">
                 <label htmlFor="file-input" className="upload-label">
                  <img src={`http://localhost:8081${book.LVRO_IMG}`} alt="userBookImage" className="book_imgs" />
                 </label>
@@ -203,7 +212,7 @@ const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
                   {/* Campo QUANTIDADE ↓ */}
                   <div className="form-field">
                     <label htmlFor="quantidade">Quantidade</label>
-                    <input type="text" name="quantidadeT" className="bookEdit_amount" value={bookDetails.quantidade} onChange={handleChange} disabled={viewOnly}/>
+                    <input type="text" name="quantidade" className="bookEdit_amount" value={bookDetails.quantidade} onChange={handleChange} disabled={viewOnly}/>
                   </div>
 
                   {/* Campo STATUS DA LEITURA ↓ */}
@@ -242,11 +251,19 @@ const EditBook = ({ book, isOpen, onClose, onSave, onDelete, viewOnly }) => {
           </div>
 
           <div className="modal-btn">
-            <button onClick={onClose} className="closeBtn" > Fechar </button>
-          {!viewOnly && (
-            <button onClick={handleSave} className="saveBtn"> Salvar alterações </button>
-          )}
+              <button onClick={onClose} className="closeBtn" > Fechar </button>
+            {!viewOnly && (
+              <button onClick={handleSave} className="saveBtn"> Salvar alterações </button>
+            )}
           </div>
+
+            {/* Modal de confirmação de deletação */}
+            <DeleteAlert
+              isOpen={showDeleteConfirm}
+              onClose={handleCloseDeleteModal}
+              onDelete={handleDelete}
+              bookTitle={bookDetails.titulo}
+            />
         </div>
       </div>
     )

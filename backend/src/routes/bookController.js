@@ -115,14 +115,14 @@ router.delete('/delete/:id', authenticateToken, (req, res) => {
 });
 
 //catalogo mostrar livros
-// Rota para pegar os livros com status 'getRideOf'
+// Rota para pegar os livros com status 'getRideOf' "Quero me Livrar"
 router.get('/catalog', async (req, res) => {
   try {
     const query = `
       SELECT tblvro.*, tbuser.USER_NM, tbuser.USER_EMAIL, tbuser.USER_ID
       FROM tblvro
       JOIN tbuser ON tblvro.LVRO_DN = tbuser.USER_ID
-      WHERE tblvro.LVRO_STT_LT = 'getRideOf';
+      WHERE tblvro.LVRO_STT_LT = 'getRideOf' AND tblvro.LVRO_QNT > 0;;
     `;
     const [rows] = await db.promise().query(query);
     // Log para verificar o conteúdo de `rows` e `fields`
@@ -145,13 +145,28 @@ router.get('/catalog', async (req, res) => {
 //ROTA para buscar detalhes do livro por ID
 router.get('/books/:id', (req, res) => {
   const { id } = req.params;
-  const query = 'SELECT * FROM tblvro WHERE LVRO_ID = ?';
+  const query = `
+    SELECT tblvro.*, tbuser.USER_NM
+    FROM tblvro
+    JOIN tbuser ON tblvro.LVRO_DN = tbuser.USER_ID
+    WHERE tblvro.LVRO_ID = ? AND tblvro.LVRO_STT_LT = "getRideOf"`;
 
   db.query(query, [id], (err, result) => {
     if (err) {
       return res.status(500).send(err);
     }
     res.send(result[0]); // Envia os dados do livro específico
+  });
+});
+
+//Minhas Vendas - Livros à venda
+router.get('/my-sales', authenticateToken, (req, res) => {
+  const userId = req.user.id;
+  const query = `SELECT * FROM tblvro WHERE LVRO_DN = ? AND tblvro.LVRO_STT_LT = "getRideOf"`;
+
+  db.query(query, [userId], (err, results) => {
+    if (err) return res.status(500).json({ error: err });
+    res.status(200).json(results);
   });
 });
 

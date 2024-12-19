@@ -1,8 +1,7 @@
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import PropTypes from "prop-types";
 import classNames from 'classnames';
-import '../css/global.css';
 import styles from '../css/Sidebar/sidebar.module.css';
 
 const SidebarDefault = ({ className = "" }) => {

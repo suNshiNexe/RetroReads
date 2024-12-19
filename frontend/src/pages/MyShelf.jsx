@@ -1,11 +1,23 @@
 import React, { useEffect, useState } from "react";
-import "../css/Shelf/shelf.css";
-import "../css/global.css";
+import "../css/MyShelf/shelf.css";
 import Filter from "../components/Filter.jsx";
 import EditBook from "../components/EditBook.jsx";
 import axios from 'axios';
 
+//Esqueleto para loading dos livros
+const SkeletonCard = () => (
+  <div className="book-card">
+    <div className="skeleton image"></div>
+    <div className="book-details">
+      <div className="skeleton text"></div>
+      <div className="skeleton text" style={{ width: "50%" }}></div>
+      <div className="skeleton text" style={{ width: "30%" }}></div>
+    </div>
+  </div>
+);
+
 function MyShelf() {
+  const [loading, setLoading] = useState(true);
   const [books, setBooks] = useState([]);
   const [currentPage, setCurrentPage] = useState(1); // Página atual
   const booksPerPage = 12; // Quantidade de livros por página
@@ -38,22 +50,31 @@ function MyShelf() {
 
   //GET BOOKS;
   useEffect(() => {
-    axios.get('http://localhost:8081/livros/my-books', {
-      headers: {
-        'Authorization': `Bearer ${localStorage.getItem("token")}`
-      }
-    })
-      .then(res => {
+    const fetchBooks = async () => {
+      try {
+        const response = await axios.get("http://localhost:8081/livros/my-books", {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        });
+
         // Formatar a data de lançamento para YYYY-MM-DD
-        const formattedBooks = res.data.map(book => ({
+        const formattedBooks = response.data.map((book) => ({
           ...book,
-          LVRO_DT_LANC: book.LVRO_DT_LANC ? book.LVRO_DT_LANC.split('T')[0] : null
+          LVRO_DT_LANC: book.LVRO_DT_LANC
+            ? book.LVRO_DT_LANC.split("T")[0]
+            : null,
         }));
 
-        console.log("Dados recebidos e formatados:", formattedBooks);
-        setBooks(formattedBooks);
-      })
-      .catch(err => console.log(err));
+        setBooks(formattedBooks); // Atualiza o estado com os livros formatados
+      } catch (error) {
+        console.error("Erro ao buscar os livros:", error);
+      } finally {
+        setLoading(false); // Finaliza o carregamento
+      }
+    };
+
+    fetchBooks();
   }, []);
 
   //TRADUÇÕES DOS STATUS
@@ -171,7 +192,12 @@ function MyShelf() {
       {/* Array de livros de cada USER */}
       <div className="background-container-shelf">
         <div className="container-bookcard">
-          {currentBooks.map((book, index) => (
+        {loading
+            ? Array(12)
+                .fill(0)
+                .map((_, index) => <SkeletonCard key={index} />) // Exibe placeholders
+            : 
+          currentBooks.map((book, index) => (
             <div className="book-card-shelf" key={index} onClick={() => handleViewClick(book)}>
               <img
                 src={`http://localhost:8081${book.LVRO_IMG}`}
@@ -180,7 +206,13 @@ function MyShelf() {
               ></img>
               <div className="book-details-shelf">
                 <h3 className="book_title">{book.LVRO_TITULO}</h3>
-                <p className="book_author">{book.LVRO_ATR}</p>
+                <p className="book_author">
+                  {
+                    book.LVRO_ATR.includes(',') // Verifica se há mais de um autor (separados por vírgulas)
+                      ? 'Vários autores'
+                      : book.LVRO_ATR
+                  }
+                </p>
                 <p className="book_score">
                   <span className="book_review">
                     <img src="/assets/icons/star-icon.svg" alt="review" className="star-icon" />

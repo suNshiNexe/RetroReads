@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import PropTypes from "prop-types";
 import classNames from 'classnames';
-import '../css/global.css';
 import styles from "../css/Header&Footer/header.module.css";
+import '../css/global.css'
 import { logout } from '../pages/Login'
 import LogoutAlert from '../components/LogoutAlert'; // Componente de alerta personalizado
 
@@ -60,7 +60,7 @@ const HeaderDefault = ({ className = "" }) => {
 
         {/* Logo e Nome da Empresa */}
         <div className={styles.brand}>
-          <a href='/'><img className={styles.companyLogoIcon} loading="lazy" alt="Company Logo" src="/assets/img/companylogo@2x.png" /></a>
+          <a href='/'><img className={styles.companyLogoIcon} alt="Company Logo" src="/assets/img/companylogo@2x.png" loading='lazy'/></a>
           <h1 className={styles.companyName}>
             <Link to="/" className={styles.companyNameLink}>RetroReads</Link>
           </h1>
@@ -98,7 +98,7 @@ const HeaderDefault = ({ className = "" }) => {
             <>
               {/* Ícone de perfil */}
               <Link to="/my-account" className={styles.loggedContainer}>
-                <img className={styles.accountIcon} loading="lazy" alt="Ícone de Perfil" src="/assets/icons/account-icon.svg" />
+                <img className={styles.accountIcon} alt="Ícone de Perfil" src="/assets/icons/account-icon.svg" loading='lazy' />
                 <span className={styles.label}>{user.user_nm}</span>
               </Link>
               <p>|</p>
