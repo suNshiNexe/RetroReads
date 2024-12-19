@@ -3,7 +3,7 @@
 </div>
 
 # RetroReads
-![Version 1.3.1](https://img.shields.io/badge/version-1.3.0-%23129357)
+![Version 1.3.1](https://img.shields.io/badge/version-1.3.1-%23129357)
 
 
 # Sumário 
