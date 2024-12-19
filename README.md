@@ -4,6 +4,7 @@
 
 # RetroReads
 ![Version 1.3.1](https://img.shields.io/badge/version-1.3.1-%23129357)
+- [v1.3.1](https://github.com/username/repo-name/releases/tag/v1.3.1) - Stable release with full book management, interest registration, and more.
 
 
 # Sumário 
