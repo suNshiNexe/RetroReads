@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from '../css/Filter/filter.module.css'; // Crie um arquivo CSS para o filtro
+import '../css/global.css'
 
 const FilterComponent = ({ className = '', onFilterChange }) => {
   // Estados para armazenar as seleções dos filtros

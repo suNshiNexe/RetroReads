@@ -22,7 +22,6 @@ export const genres = [ //Gênero dos livros
 
 function BookRegister() {
 
-
   // Estado para armazenar os gêneros selecionados
   const [selectedGenres, setSelectedGenres] = useState([]);
 
@@ -120,7 +119,6 @@ function BookRegister() {
   };
 
   /* Função para as capas imagens*/
-  // const fileInputRef = useRef(null); // useRef para o input de arquivo
   const [imagePreview, setImagePreview] = useState(null); // useState para armazenar a imagem carregada
 
   const handleFileChange = (e) => {

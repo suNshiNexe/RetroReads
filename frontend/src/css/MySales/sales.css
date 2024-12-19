@@ -1,97 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-inter), sans-serif;
-}
-
-/* ESQUELETO DE LOADING */
-.skeleton {
-    background-color: #ccc;
-    border-radius: 5px;
-    animation: shimmer 1.5s infinite;
-  }
-  
-.skeleton.image {
-    width: 100px;
-    height: 150px;
-}
-  
-.skeleton.text {
-    height: 20px;
-    width: 70%;
-    margin: 10px 0;
-}
-  
-@keyframes shimmer {
-    0% {
-      background-color: #e0e0e0;
-    }
-    50% {
-      background-color: #f5f5f5;
-    }
-    100% {
-      background-color: #e0e0e0;
-    }
-}
-
-/* ---------------------------------------- */
-
 /* Título Catálogo */
-.h1-CatalogTitle{
+.h1-ShelfTitle{
     max-width: 80%;
     margin: 2.5rem auto;
+    font-size: 2rem;
     color: #333;
 }
 
 /* Placeholder que simula o espaço do botão expandido */
-.placeholder {
+.placeholder-shelf {
     display: none; 
     height: 10rem;
 }
 
-.placeholder.expanded {
+.placeholder-shelf.expanded {
     display: block;
 }
 
 /* Botão filtro */
-.btn-filter{
+.btn-filter-shelf{
     position: absolute;
-    right: 11.8rem;
+    right: 16rem;
     top: 7rem;
     padding: 0.8rem 0.9rem;
     background-color: #F9F9F8;
     border: 1px solid #00000033;
     border-radius: 1rem;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.btn-filter.expanded {
+.btn-filter-shelf.expanded {
     width: 35%;
     cursor: pointer;
 }
 
-.btn-filter:not(.expanded):hover{
-    background-color: #91918E;
-    transition: 0.3s;
-    cursor: pointer;
+/* Botão plus */
+.book-registerBtn{
+    position: absolute;
+    right: 11.8rem;
+    top: 7rem;
+    border: none;
+    background-color: transparent;
 }
 
-/* Ícone filtro */
-.filter-icon{
+.book-registerBtn a {
     display: block;
-    margin-left: auto;
-    width: 20px; 
-    height: 20px; 
+    padding: 0.8rem 0.9rem;
+    background-color: #e6f3ed;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
 }
 
-.btn-filter:not(.expanded):hover .filter-icon {
-    filter: brightness(0) invert(1); 
+.book-registerBtn a:hover{
+    background-color: #129357;
+    transition: 0.3s;
 }
 
-/*----------------------------------------*/
+/* Icone plus ( + ) */
+.book-registerBtn .plus-icon {
+    display: block;
+    width: 19px; 
+    height: 19px; 
+}
+
+.book-registerBtn:hover .plus-icon {
+    content: url('/public/assets/icons/plus-icon-white.svg');
+}
+
+/*---------------------------------------------------------*/
+
 /* Container */
-.background-container-catalog {
+.background-container-shelf {
     width: 80%;
     padding: 1rem;
     margin: 2.5rem auto;
@@ -111,7 +90,7 @@
 }
 
 /* Card de cada livro */
-.book-card {
+.book-card-shelf {
     background-color: #FEFEFE;
     border: 1px solid #ddd;
     padding: 1rem;
@@ -121,7 +100,7 @@
     width: 15rem;
 }
 
-.book-card:hover{
+.book-card-shelf:hover{
     -webkit-box-shadow: 1px 6px 18px -2px rgba(0,0,0,0.46);
     -moz-box-shadow: 1px 6px 18px -2px rgba(0,0,0,0.46);
     box-shadow: 1px 6px 18px -2px rgba(0,0,0,0.46);
@@ -138,7 +117,7 @@
 }
 
 /* Detalhes do livro */
-.book-details{
+.book-details-shelf{
     font-weight: 600;
     margin: 0 auto;
 }
@@ -161,37 +140,88 @@
     color: #91918E;
 }
 
-/* Preço do livro */
-.book_price{
+/* AVALIAÇÃO DO LIVRO */
+.book_score{
+    font-size: 1.1rem;
     text-align: left;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-    font-weight: bold;
     color: #129357;
+    margin-bottom: 1rem;
 }
 
-.currency{
-    color: black;
-    font-size: 1.3rem;
-    margin-right: 0.2rem;
+.book_review{
+    margin-right: 0.4rem;
 }
 
-/* Botão interesse */
-.interest-button{
-    background-color: #19c8761a;
-    color: #129357;
-    border: 1px  solid #129357;
+.star-icon{
+    width: 1.1rem;
+}
+
+/* ------------------------------------------- */
+
+/* STATUS DA LEITURA - QUERO LER */
+.reading-status-view.wantToRead{
+    background-color: #f3f3f3;
+    color: #91918e;
+    border: 1px  solid #91918e;
     font-weight: bold;
     font-size: 1.3rem;
     width: 100%;
     padding: 0.3rem 0.6rem;
     border-radius: 0.5rem;
+}
+
+/* STATUS DA LEITURA - LENDO */
+.reading-status-view.reading{
+    background-color: #fef6e5;
+    color: #ffaa00;
+    border: 1px  solid #ffaa00;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+/* STATUS DA LEITURA - LIDO */
+.reading-status-view.read{
+    background-color: #e6f5fd;
+    color: #09a6f3;
+    border: 1px  solid #09a6f3;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+/* STATUS DA LEITURA - QUERO ME LIVRAR */
+.reading-status-view.getRideOf{
+    background-color: #fcebe9;
+    color: #e93f30;
+    border: 1px  solid #e93f30;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+/* ------------------------------------------- */
+
+.book-edit-btn{
+    margin-top: 0.3em;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #91918e;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
     cursor: pointer;
 }
 
-.interest-button:hover{
-    background-color: #129357;
-    color: white;
+.book-edit-btn:hover{
+    color: #464646;
     transition: 0.3s;
 }
 

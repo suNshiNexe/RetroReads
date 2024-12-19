@@ -1,0 +1,180 @@
+/*---------------------  CONTAINER PRINCIPAL  ------------------------*/
+
+/* Container principal da seção de interesses */
+.background-container-interests {
+    width: 63.3%;
+    padding: 1rem;
+    margin: 2.5rem auto;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+}
+
+/*---------------------  TÍTULO INTERESSE  ------------------------*/
+
+/* Estilo do título de interesses */
+.h1-interestsTitle{
+    max-width: 63.3%;
+    margin: 2.5rem auto;
+    color: #333;
+}
+
+/*---------------------  CONTAINER LIVROS  ------------------------*/
+
+/* Container para a seção dos livros */
+.container-div-myInterests{
+    display: flex;
+    flex-direction: row;
+    padding: 1.25rem; /* Convertido de 20px para rem */
+    background-color: #FEFEFE;
+    border: 1px solid #00000033;
+    border-radius: 0.5rem;
+    margin: 0.8rem 0;
+}
+
+/*---------------------  IMAGEM DO LIVRO  ------------------------*/
+
+/* Estilo da imagem do livro */
+.book-img-myInterests{
+    width: 13.75rem; /* Convertido de 220px para rem */
+    height: 21.25rem; /* Convertido de 340px para rem */
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.2); 
+    margin-right: 1rem;
+}
+
+/*---------------------  TÍTULO E SUBTÍTULO DO LIVRO  ------------------------*/
+
+/* Container para o título e subtítulo do livro */
+.container-book-titleAndSubtitle-myInterests{
+    height: 7.8rem;
+}
+
+/* Título da página do livro */
+.h1-BookPageTitle-myInterests{
+    max-width: 70%;
+    margin: 2.5rem auto;
+    color: #333;
+}
+
+/* Subtítulo do livro (nome do autor) */
+.h1-bookSubtitle-myInterests{
+    font-weight: 500;
+    color: #91918E;
+}
+
+/* Título do livro */
+.h1-bookTitle-myInterests{
+    white-space: nowrap; /* Impede a quebra de linha */
+    text-overflow: ellipsis; /* Adiciona o '...' quando o texto é muito grande */
+    overflow: hidden; /* Garante que o texto que ultrapassa seja escondido */
+    width: 500px; /* Defina um valor de largura apropriado para o seu caso */
+}
+
+/* Quantidade de livros */
+.quantity-myInterests{
+    display: flex;
+    margin-left: 0.5rem;
+    font-size: 1.5rem; /* Convertido de px para rem */
+    font-weight: 500;
+    color: #91918E;
+    align-items: flex-end;
+    margin-bottom: 0.1rem;
+}
+
+/*---------------------  SEÇÃO DETALHES DO LIVRO  ------------------------*/
+
+/* Container para os detalhes do livro */
+.container-book-details-myInterests {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Duas colunas: a primeira para os títulos, a segunda para as descrições */
+    row-gap: 0.125rem; /* Convertido de 2px para rem */
+    column-gap: 0.0625rem; /* Convertido de 1px para rem */
+}
+
+/* Estilo dos títulos das seções de detalhes */
+.container-book-details-myInterests .section-Title {
+    font-weight: bold;
+    background-color: #00000023; 
+    padding: 0.375rem; /* Convertido de 6px para rem */
+    border-radius: 0.5rem; /* Convertido de 8px para rem */
+    font-size: 0.9rem; 
+}
+
+/* Estilo das descrições das seções de detalhes */
+.container-book-details-myInterests .section-Description {
+    background-color: #00000010; 
+    padding: 0.375rem; /* Convertido de 6px para rem */
+    border-radius: 0.5rem; /* Convertido de 8px para rem */
+    font-size: 0.9rem; 
+}
+
+/*---------------------  DETALHES ADICIONAIS  ------------------------*/
+
+/* Container para mais detalhes do livro */
+.container-total-moreDetails-myInterests{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+/*---------------------  PREÇO  ------------------------*/
+
+/* Container do preço do livro */
+.container-bookPrice-myInterests{
+    display: block;
+    margin-left: auto;
+}
+
+/*---------------------  EM NEGOCIAÇÃO  ------------------------*/
+
+/* Container de negociação com vendedor */
+.container-book-inNegociation-myInterests{
+    margin-top: 3.6rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    color: #91918e;
+    border: 1px solid #91918e;
+    font-size: 1.2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Telefone do vendedor */
+.phoneVendor-myInterests{
+    margin-top: 1rem;
+}
+
+/* Container para o botão da negociação */
+.container-book-btn-myInterests{
+    margin-left: 1rem;
+}
+
+/*---------------------  BOTÃO NEGOCIAÇÃO  ------------------------*/
+
+/* Botão de cancelar interesse */
+.container-book-btn-myInterests button{
+    border: none;
+    font-size: 1.2rem; 
+    padding: 1.125rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #fcebe9;
+    color: red;
+    border: 1px solid red;
+    width: 100%;
+    white-space: nowrap; 
+}
+
+.container-book-btn-myInterests button:hover{
+    background-color: rgba(233, 63, 48, 0.8);
+    border: 1px solid rgba(175, 41, 29, 0.8);
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}

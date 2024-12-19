@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter), sans-serif;
+}
+
+/* -------------------------------- */
+
+/*Fundo*/
+.background-container-bookPage{
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #F9F9F8;
+    border: 1px solid #00000033;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------------- */
+
+/*DIVS FOTO DO LIVRO e DETALHES */
+.container-div-bookPage{
+    display: flex;
+    gap: 20px;
+}
+
+.bookPhoto-and-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.bookDetails {
+    padding: 0 10px;
+}
+
+/* -------------------------------- */
+
+.head{
+    display: flex;
+    align-items: center;
+    margin: 2.5rem 18rem;
+    gap: 15px;
+}
+
+/* Título Página do livro */
+.h1-BookPageTitle{
+    max-width: 70%;
+    color: #333;
+}
+
+/* Nome do Autor */
+.h1-bookSubtitle{
+    font-weight: 600;
+    color: #91918E;
+}
+
+/*-------------------------------- */
+
+/* DESCRIÇÃO DO LIVRO */
+.bookDescription{
+    font-weight: 500;
+    height: 10rem;
+    overflow-y: scroll;
+}
+
+/* -------------------------------- */
+
+/* Imagem */
+.book_img-bookPage{
+    width: 300px;
+    height: 480px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* -------------------------------- */
+
+/* DIV EM ESTQQUE E PREÇO*/
+.inStock-and-price{
+    display: flex;
+    align-items: flex-end;
+    gap: 1.565rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    text-wrap: nowrap;
+}
+
+/* PREÇO DO LIVRO */
+.bookPage-currency{
+    color: black;
+    font-size: 2.5rem;
+    margin-right: 0.2rem;
+}
+
+.bookPage-price{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #129357;
+}
+
+/* EM ESTOQUE */
+.bookPage-inStock{
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #129357;
+    margin-bottom: 0.5rem;
+}
+
+/* -------------------------------- */
+
+/* SEÇÃO DETALHES */
+.sectionDetailTitle{
+    margin-bottom: 0.625rem;
+}
+
+.bookSpecifications .section {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Duas colunas: a primeira para os títulos, a segunda para as descrições */
+    row-gap: 4px; /* Espaçamento vertical entre as linhas */
+    column-gap: 2px;
+}
+  
+.bookSpecifications .section-Title {
+    font-weight: bold;
+    background-color: #00000023; 
+    padding: 10px;
+    border-radius: 10px;
+}
+  
+.bookSpecifications .section-Description {
+    background-color: #00000010; 
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.h1-comebackToCatalog{
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #129357;
+}
+
+.h1-comebackToCatalog:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
