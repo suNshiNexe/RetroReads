@@ -45,6 +45,8 @@ Ao integrar diferentes tipos de usuários, o CSCO promove um ambiente colaborati
 
 -  **Upload de imagens com multer**.
 
+-  **Criptografia de dados sensíveis**. O sistema criptografa senhas ao passar pelo processo de cadastro, ao fazer login ele descriptografa utilizando a lib bcrypt.
+
 ## Screenshots
 Home (Catálogo), BookPage (página do produto) e Meus Interesses
 <div align="center">
